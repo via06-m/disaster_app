@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Explanation: Base layout, includes CSS and global nav. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Disaster Preparedness App{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Explanation: Navigation with conditional links based on login/admin. -->
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('educationalhub') }}">Educational Hub</a>
+    <a href="{{ url_for('resourcedirectory') }}">Resources</a>
+    {% if session.get('user_id') %}
+      <a href="{{ url_for('home') }}">Dashboard</a>
+      <a href="{{ url_for('communityreport') }}">Report</a>
+      <a href="{{ url_for('emergencyplangenerator') }}">Plan</a>
+      <a href="{{ url_for('safetycheck') }}">Safety Check</a>
+      <a href="{{ url_for('personalinformation') }}">Profile</a>
+      {% if session.get('role') == 'admin' %}
+        <a href="{{ url_for('admin_dashboard') }}">Admin</a>
+        <a href="{{ url_for('admin_resources') }}">Manage Resources</a>
+      {% endif %}
+      <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('register') }}">Register</a>
+      <a href="{{ url_for('adminlogin') }}">Admin Login</a>
+    {% endif %}
+  </nav>
+
+  <main class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

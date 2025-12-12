@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Admin dashboard{% endblock %}
+{% block content %}
+  <!-- Explanation: Overview of reports, users, safety, resources. -->
+  <h1>Administrator Dashboard</h1>
+
+  <section>
+    <h2>Recent Reports</h2>
+    <ul>
+      {% for r in recent_reports %}
+        <li>
+          {{ r.disaster_type }} — {{ r.location }} — {{ r.status }}
+          <form method="post" action="{{ url_for('verify_report', report_id=r.id) }}" style="display:inline;">
+            <button type="submit">Verify</button>
+          </form>
+          <form method="post" action="{{ url_for('resolve_report', report_id=r.id) }}" style="display:inline;">
+            <button type="submit">Resolve</button>
+          </form>
+        </li>
+      {% else %}
+        <li>No reports.</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recent Users</h2>
+    <ul>
+      {% for u in recent_users %}
+        <li>{{ u.full_name }} — {{ u.email }} — {{ u.role }}</li>
+      {% else %}
+        <li>No users.</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Safety Updates</h2>
+    <ul>
+      {% for s in recent_safety %}
+        <li>{{ s.user.full_name }} — {{ s.status }} — {{ s.created_at.strftime("%Y-%m-%d %H:%M") }}</li>
+      {% else %}
+        <li>No safety updates.</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Resources</h2>
+    <ul>
+      {% for r in resources %}
+        <li>{{ r.name }} — {{ r.category }} {% if r.contact %}(Contact: {{ r.contact }}){% endif %}</li>
+      {% else %}
+        <li>No resources.</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Add/Update Resources</h3>
+    <form method="post" action="{{ url_for('admin_resources') }}">
+      {{ form.csrf_token }}
+      <div>{{ form.name.label }} {{ form.name() }}</div>
+      <div>{{ form.category.label }} {{ form.category() }}</div>
+      <div>{{ form.address.label }} {{ form.address() }}</div>
+      <div>{{ form.contact.label }} {{ form.contact() }}</div>
+      <div>{{ form.latitude.label }} {{ form.latitude() }}</div>
+      <div>{{ form.longitude.label }} {{ form.longitude() }}</div>
+      <div>{{ form.submit() }}</div>
+    </form>
+  </section>
+{% endblock %}

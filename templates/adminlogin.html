@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Admin login{% endblock %}
+{% block content %}
+  <!-- Explanation: Admin login form. -->
+  <h1>Admin Login</h1>
+  <form method="post">
+    {{ form.csrf_token }}
+    <div>{{ form.email.label }} {{ form.email() }}</div>
+    <div>{{ form.password.label }} {{ form.password() }}</div>
+    <div>{{ form.submit() }}</div>
+  </form>
+{% endblock %}
