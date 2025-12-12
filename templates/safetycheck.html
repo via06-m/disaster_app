@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Safety check{% endblock %}
+{% block content %}
+  <!-- Explanation: Update safety status and view history. -->
+  <h1>Safety Check-in</h1>
+  <form method="post">
+    {{ form.csrf_token }}
+    <div>{{ form.status.label }} {{ form.status() }}</div>
+    <div>{{ form.note.label }} {{ form.note() }}</div>
+    <div>{{ form.submit() }}</div>
+  </form>
+
+  <h2>Your Safety History</h2>
+  <ul>
+    {% for s in history %}
+      <li>{{ s.status }} — {{ s.created_at.strftime("%Y-%m-%d %H:%M") }} — {{ s.note or "No note" }}</li>
+    {% else %}
+      <li>No entries yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
