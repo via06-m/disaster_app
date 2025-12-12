@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <!-- Explanation: User dashboard with recent items. -->
+  <h1>Hello, {{ user.full_name }}</h1>
+
+  <section>
+    <h2>Your Latest Safety Status</h2>
+    {% if safety %}
+      <p>Status: <strong>{{ safety.status }}</strong> on {{ safety.created_at.strftime("%Y-%m-%d %H:%M") }}</p>
+      <p>Note: {{ safety.note or "None" }}</p>
+    {% else %}
+      <p>No safety check yet.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Your Emergency Plan</h2>
+    {% if plan %}
+      <p>Meeting point: {{ plan.meeting_point or "Not set" }}</p>
+      <p>Members: {{ plan.household_members }}</p>
+      <p>Evacuation routes: {{ plan.evacuation_routes or "Not set" }}</p>
+    {% else %}
+      <p>No saved plan yet. <a href="{{ url_for('emergencyplangenerator') }}">Create one</a>.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Recent Reports</h2>
+    <ul>
+      {% for r in reports %}
+        <li>{{ r.disaster_type }} — {{ r.location }} — {{ r.status }} on {{ r.created_at.strftime("%Y-%m-%d") }}</li>
+      {% else %}
+        <li>No recent reports.</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
