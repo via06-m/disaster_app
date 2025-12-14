@@ -1,0 +1,780 @@
+id,user_id,household_members,meeting_point,evacuation_routes,supply_checklist,notes,created_at
+1,9,5,Waiting Shed of Barangay 1,Munlawin Sur Elementary School,"- Water  
+- Non-perishable food  
+- Manual can opener  
+- Extra clothes  
+- Rain gear  
+- Sturdy shoes  
+- Blankets  
+- Sleeping bags  
+- First aid kit  
+- Prescription medications  
+- Flashlight  
+- Extra batteries  
+- Battery-powered/hand-crank radio  
+- Multi-purpose tool  
+- Matches/lighter (waterproof)  
+- Whistle  
+- Plastic sheeting  
+- Duct tape  
+- Local maps  
+- Soap  
+- Hand sanitizer  
+- Toothbrush  
+- Toothpaste  
+- Feminine hygiene products  
+- Toilet paper  
+- Important documents (copies)  
+- Mobile phone  
+- Charger  
+- Power bank  
+- Contact list  
+- Cash (small bills/coins)  
+- Baby supplies  
+- Pet supplies  
+- Masks (for ash)  
+- Goggles (for ash)  
+- Waterproof bags  
+- Tarps  
+- Rope  
+- Extra fuel  
+- Tools to secure windows/doors",,2025-12-13 15:13:17.675581
+2,5,3,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Sturdy shoes
+*   Waterproof bags
+*   Toothbrush
+*   Mobile phone
+*   Sleeping bags
+*   Local maps
+*   Rope
+*   Baby supplies
+*   Plastic sheeting
+*   Rain gear
+*   Cash (small bills/coins)
+*   Hand sanitizer
+*   Extra batteries
+*   Non-perishable food
+*   Blankets
+*   Important documents (copies)
+*   First aid kit
+*   Battery-powered/hand-crank radio
+*   Matches/lighter (waterproof)
+*   Feminine hygiene products
+*   Tarps
+*   Extra fuel
+*   Pet supplies
+*   Flashlight
+*   Prescription medications
+*   Multi-purpose tool
+*   Contact list
+*   Water
+*   Goggles (for ash)
+*   Masks (for ash)
+*   Toilet paper
+*   Extra clothes
+*   Soap
+*   Charger
+*   Toothpaste
+*   Manual can opener
+*   Power bank
+*   Tools to secure windows/doors
+*   Duct tape
+*   Whistle",Be on time.,2025-12-13 15:17:29.593977
+3,6,2,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Toothpaste
+*   Rain gear
+*   Manual can opener
+*   Contact list
+*   Pet supplies
+*   Extra fuel
+*   First aid kit
+*   Waterproof bags
+*   Toothbrush
+*   Masks (for ash)
+*   Mobile phone
+*   Local maps
+*   Sleeping bags
+*   Duct tape
+*   Whistle
+*   Cash (small bills/coins)
+*   Plastic sheeting
+*   Extra batteries
+*   Soap
+*   Blankets
+*   Baby supplies
+*   Extra clothes
+*   Feminine hygiene products
+*   Matches/lighter (waterproof)
+*   Charger
+*   Power bank
+*   Sturdy shoes
+*   Water
+*   Non-perishable food
+*   Prescription medications
+*   Battery-powered/hand-crank radio
+*   Goggles (for ash)
+*   Important documents (copies)
+*   Hand sanitizer
+*   Tools to secure windows/doors
+*   Multi-purpose tool
+*   Tarps
+*   Toilet paper
+*   Flashlight",,2025-12-13 15:19:21.375031
+4,8,4,Waiting Shed of Barangay 2,Munlawin Sur Elementary School,"*   Cash (small bills/coins)
+*   Multi-purpose tool
+*   Sleeping bags
+*   Extra fuel
+*   Baby supplies
+*   Masks (for ash)
+*   Hand sanitizer
+*   Rain gear
+*   Extra clothes
+*   Contact list
+*   Water
+*   Toilet paper
+*   Sturdy shoes
+*   Tarps
+*   Important documents (copies)
+*   Local maps
+*   Toothpaste
+*   Matches/lighter (waterproof)
+*   Mobile phone
+*   Feminine hygiene products
+*   Power bank
+*   Waterproof bags
+*   Toothbrush
+*   Prescription medications
+*   Non-perishable food
+*   Blankets
+*   Pet supplies
+*   Extra batteries
+*   Battery-powered/hand-crank radio
+*   Goggles (for ash)
+*   Charger
+*   Whistle
+*   Soap
+*   Manual can opener
+*   First aid kit
+*   Duct tape
+*   Tools to secure windows/doors
+*   Plastic sheeting
+*   Flashlight",,2025-12-13 15:21:17.213702
+5,10,2,Waiting Shed of Barangay 3,Munlawin Sur Elementary School,"*   Power bank
+*   Manual can opener
+*   Extra clothes
+*   First aid kit
+*   Toothbrush
+*   Water
+*   Cash (small bills/coins)
+*   Tarps
+*   Baby supplies
+*   Mobile phone
+*   Duct tape
+*   Matches/lighter (waterproof)
+*   Contact list
+*   Local maps
+*   Rain gear
+*   Important documents (copies)
+*   Blankets
+*   Toilet paper
+*   Toothpaste
+*   Masks (for ash)
+*   Extra batteries
+*   Sleeping bags
+*   Extra fuel
+*   Hand sanitizer
+*   Sturdy shoes
+*   Waterproof bags
+*   Pet supplies
+*   Prescription medications
+*   Multi-purpose tool
+*   Soap
+*   Battery-powered/hand-crank radio
+*   Non-perishable food
+*   Whistle
+*   Goggles (for ash)
+*   Charger
+*   Tools to secure windows/doors
+*   Flashlight
+*   Plastic sheeting
+*   Feminine hygiene products",,2025-12-13 16:26:20.800707
+6,4,1,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Sturdy shoes
+*   Waterproof bags
+*   Matches/lighter (waterproof)
+*   Power bank
+*   Baby supplies
+*   Hand sanitizer
+*   Toothbrush
+*   Blankets
+*   Soap
+*   Tarps
+*   Rain gear
+*   Mobile phone
+*   Prescription medications
+*   Flashlight
+*   Extra batteries
+*   Plastic sheeting
+*   Pet supplies
+*   Contact list
+*   Goggles (for ash)
+*   Manual can opener
+*   Toothpaste
+*   Non-perishable food
+*   Sleeping bags
+*   Local maps
+*   Extra clothes
+*   Multi-purpose tool
+*   Water
+*   Duct tape
+*   Charger
+*   Battery-powered/hand-crank radio
+*   First aid kit
+*   Tools to secure windows/doors
+*   Masks (for ash)
+*   Extra fuel
+*   Important documents (copies)
+*   Toilet paper
+*   Cash (small bills/coins)
+*   Feminine hygiene products
+*   Whistle",,2025-12-13 16:32:38.651341
+7,7,3,Waiting Shed of Barangay 2,Barangay Hall,"*   Waterproof bags
+*   Toothpaste
+*   Rain gear
+*   Baby supplies
+*   Mobile phone
+*   Non-perishable food
+*   Blankets
+*   Matches/lighter (waterproof)
+*   Plastic sheeting
+*   First aid kit
+*   Goggles (for ash)
+*   Charger
+*   Contact list
+*   Pet supplies
+*   Flashlight
+*   Duct tape
+*   Multi-purpose tool
+*   Sturdy shoes
+*   Power bank
+*   Manual can opener
+*   Extra batteries
+*   Important documents (copies)
+*   Soap
+*   Sleeping bags
+*   Water
+*   Whistle
+*   Tarps
+*   Extra clothes
+*   Toothbrush
+*   Tools to secure windows/doors
+*   Masks (for ash)
+*   Local maps
+*   Extra fuel
+*   Feminine hygiene products
+*   Battery-powered/hand-crank radio
+*   Hand sanitizer
+*   Cash (small bills/coins)
+*   Prescription medications",,2025-12-13 17:20:52.347235
+8,11,2,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Toothpaste
+*   Baby supplies
+*   Charger
+*   Water
+*   Sturdy shoes
+*   Masks (for ash)
+*   Rain gear
+*   Mobile phone
+*   Blankets
+*   Matches/lighter (waterproof)
+*   Non-perishable food
+*   Toilet paper
+*   Power bank
+*   Toothbrush
+*   Waterproof bags
+*   Pet supplies
+*   Sleeping bags
+*   Flashlight
+*   Contact list
+*   Goggles (for ash)
+*   Soap
+*   Duct tape
+*   Tools to secure windows/doors
+*   Extra batteries
+*   Manual can opener
+*   Plastic sheeting
+*   Extra fuel
+*   First aid kit
+*   Local maps
+*   Multi-purpose tool
+*   Tarps
+*   Prescription medications
+*   Battery-powered/hand-crank radio
+*   Whistle
+*   Hand sanitizer
+*   Feminine hygiene products
+*   Extra clothes
+*   Cash (small bills/coins)",,2025-12-13 17:33:12.604533
+9,12,2,Waiting Shed of Barangay 2,Barangay Hall of Munlawin Sur,"*   Rain gear
+*   Charger
+*   Toilet paper
+*   Matches/lighter (waterproof)
+*   Water
+*   Toothpaste
+*   Important documents (copies)
+*   Sleeping bags
+*   Hand sanitizer
+*   Extra clothes
+*   Tools to secure windows/doors
+*   Mobile phone
+*   Toothbrush
+*   Duct tape
+*   Contact list
+*   Goggles (for ash)
+*   Pet supplies
+*   Flashlight
+*   Local maps
+*   Masks (for ash)
+*   Sturdy shoes
+*   Blankets
+*   First aid kit
+*   Waterproof bags
+*   Soap
+*   Non-perishable food
+*   Extra batteries
+*   Manual can opener
+*   Tarps
+*   Multi-purpose tool
+*   Feminine hygiene products
+*   Plastic sheeting
+*   Whistle
+*   Power bank
+*   Baby supplies
+*   Extra fuel
+*   Prescription medications
+*   Battery-powered/hand-crank radio
+*   Cash (small bills/coins)",,2025-12-13 17:41:13.801760
+10,13,4,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Soap
+*   Mobile phone
+*   Water
+*   Pet supplies
+*   Toothpaste
+*   Matches/lighter (waterproof)
+*   Sturdy shoes
+*   Toilet paper
+*   Plastic sheeting
+*   Blankets
+*   Flashlight
+*   Toothbrush
+*   First aid kit
+*   Baby supplies
+*   Manual can opener
+*   Rain gear
+*   Waterproof bags
+*   Non-perishable food
+*   Tools to secure windows/doors
+*   Power bank
+*   Whistle
+*   Extra fuel
+*   Tarps
+*   Masks (for ash)
+*   Important documents (copies)
+*   Duct tape
+*   Sleeping bags
+*   Extra clothes
+*   Charger
+*   Hand sanitizer
+*   Local maps
+*   Multi-purpose tool
+*   Contact list
+*   Prescription medications
+*   Battery-powered/hand-crank radio
+*   Extra batteries
+*   Cash (small bills/coins)
+*   Goggles (for ash)",Be alert as always.,2025-12-14 00:12:39.003357
+11,14,3,Waiting Shed of Barangay 3,Barangay Hall of Munlawin Sur,"*   Toothbrush
+*   Waterproof bags
+*   Hand sanitizer
+*   Tools to secure windows/doors
+*   Mobile phone
+*   Blankets
+*   Power bank
+*   Matches/lighter (waterproof)
+*   Toilet paper
+*   Prescription medications
+*   Toothpaste
+*   Extra clothes
+*   Pet supplies
+*   Flashlight
+*   Local maps
+*   First aid kit
+*   Soap
+*   Water
+*   Manual can opener
+*   Non-perishable food
+*   Rain gear
+*   Goggles (for ash)
+*   Contact list
+*   Sturdy shoes
+*   Plastic sheeting
+*   Sleeping bags
+*   Extra fuel
+*   Charger
+*   Whistle
+*   Multi-purpose tool
+*   Masks (for ash)
+*   Battery-powered/hand-crank radio
+*   Feminine hygiene products
+*   Duct tape
+*   Important documents (copies)
+*   Cash (small bills/coins)
+*   Baby supplies
+*   Tarps
+*   Extra batteries",Be always safe.,2025-12-14 00:22:00.392913
+12,15,2,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Goggles (for ash)
+*   Mobile phone
+*   Tools to secure windows/doors
+*   Toothpaste
+*   Blankets
+*   Extra batteries
+*   Matches/lighter (waterproof)
+*   Sturdy shoes
+*   First aid kit
+*   Plastic sheeting
+*   Tarps
+*   Pet supplies
+*   Toothbrush
+*   Charger
+*   Waterproof bags
+*   Power bank
+*   Baby supplies
+*   Masks (for ash)
+*   Non-perishable food
+*   Soap
+*   Rain gear
+*   Sleeping bags
+*   Extra fuel
+*   Duct tape
+*   Manual can opener
+*   Water
+*   Flashlight
+*   Contact list
+*   Important documents (copies)
+*   Local maps
+*   Multi-purpose tool
+*   Hand sanitizer
+*   Battery-powered/hand-crank radio
+*   Whistle
+*   Feminine hygiene products
+*   Prescription medications
+*   Cash (small bills/coins)
+*   Toilet paper
+*   Extra clothes",N/A,2025-12-14 00:27:13.206490
+13,16,5,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Toothpaste
+*   Extra batteries
+*   Sturdy shoes
+*   Manual can opener
+*   Power bank
+*   Charger
+*   Tools to secure windows/doors
+*   Non-perishable food
+*   Pet supplies
+*   Mobile phone
+*   Matches/lighter (waterproof)
+*   Water
+*   Toothbrush
+*   Rain gear
+*   Plastic sheeting
+*   Blankets
+*   Hand sanitizer
+*   Soap
+*   Sleeping bags
+*   Waterproof bags
+*   Baby supplies
+*   First aid kit
+*   Toilet paper
+*   Masks (for ash)
+*   Duct tape
+*   Prescription medications
+*   Whistle
+*   Extra clothes
+*   Local maps
+*   Multi-purpose tool
+*   Goggles (for ash)
+*   Tarps
+*   Flashlight
+*   Important documents (copies)
+*   Contact list
+*   Extra fuel
+*   Feminine hygiene products
+*   Battery-powered/hand-crank radio
+*   Cash (small bills/coins)",Manage stress!,2025-12-14 00:39:03.672631
+14,17,3,Waiting Shed of Barangay 2,Barangay Hall of Munlawin Sur,"*   Toothpaste
+*   Waterproof bags
+*   Flashlight
+*   Toilet paper
+*   Pet supplies
+*   Blankets
+*   Charger
+*   Mobile phone
+*   Sleeping bags
+*   Matches/lighter (waterproof)
+*   Water
+*   Plastic sheeting
+*   Masks (for ash)
+*   Toothbrush
+*   First aid kit
+*   Sturdy shoes
+*   Power bank
+*   Extra clothes
+*   Hand sanitizer
+*   Tools to secure windows/doors
+*   Duct tape
+*   Extra fuel
+*   Soap
+*   Manual can opener
+*   Local maps
+*   Important documents (copies)
+*   Non-perishable food
+*   Rain gear
+*   Multi-purpose tool
+*   Tarps
+*   Whistle
+*   Feminine hygiene products
+*   Battery-powered/hand-crank radio
+*   Baby supplies
+*   Goggles (for ash)
+*   Prescription medications
+*   Contact list
+*   Cash (small bills/coins)
+*   Extra batteries",Help others when able!,2025-12-14 00:44:05.978441
+15,18,4,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   Toothpaste
+*   Rain gear
+*   Mobile phone
+*   Extra batteries
+*   Matches/lighter (waterproof)
+*   Pet supplies
+*   Toothbrush
+*   Blankets
+*   Tools to secure windows/doors
+*   Local maps
+*   Sleeping bags
+*   First aid kit
+*   Charger
+*   Important documents (copies)
+*   Power bank
+*   Waterproof bags
+*   Flashlight
+*   Extra clothes
+*   Soap
+*   Hand sanitizer
+*   Manual can opener
+*   Water
+*   Plastic sheeting
+*   Non-perishable food
+*   Toilet paper
+*   Multi-purpose tool
+*   Whistle
+*   Baby supplies
+*   Masks (for ash)
+*   Prescription medications
+*   Duct tape
+*   Sturdy shoes
+*   Feminine hygiene products
+*   Contact list
+*   Goggles (for ash)
+*   Tarps
+*   Cash (small bills/coins)
+*   Extra fuel
+*   Battery-powered/hand-crank radio",Stay hydrated!,2025-12-14 01:02:21.267012
+16,19,2,Waiting Shed of Barangay 3,Barangay Hall of Munlawin Sur,"*   Masks (for ash)
+*   Extra fuel
+*   Non-perishable food
+*   Sturdy shoes
+*   Toilet paper
+*   Important documents (copies)
+*   Waterproof bags
+*   Rain gear
+*   Charger
+*   Pet supplies
+*   Toothpaste
+*   Tools to secure windows/doors
+*   First aid kit
+*   Water
+*   Sleeping bags
+*   Battery-powered/hand-crank radio
+*   Toothbrush
+*   Extra clothes
+*   Duct tape
+*   Blankets
+*   Feminine hygiene products
+*   Contact list
+*   Plastic sheeting
+*   Soap
+*   Whistle
+*   Matches/lighter (waterproof)
+*   Local maps
+*   Cash (small bills/coins)
+*   Prescription medications
+*   Goggles (for ash)
+*   Hand sanitizer
+*   Flashlight
+*   Power bank
+*   Baby supplies
+*   Tarps
+*   Multi-purpose tool
+*   Manual can opener
+*   Extra batteries
+*   Mobile phone",Trust your instincts!,2025-12-14 01:10:53.633533
+17,20,2,Waiting Shed of Barangay 1,Barangay Hall of Munlawin Sur,"*   Plastic sheeting
+*   Matches/lighter (waterproof)
+*   Extra clothes
+*   Soap
+*   Important documents (copies)
+*   Water
+*   Pet supplies
+*   Cash (small bills/coins)
+*   Sleeping bags
+*   Duct tape
+*   Mobile phone
+*   Toothpaste
+*   Battery-powered/hand-crank radio
+*   Masks (for ash)
+*   Extra fuel
+*   Non-perishable food
+*   Blankets
+*   Toilet paper
+*   Waterproof bags
+*   Hand sanitizer
+*   Feminine hygiene products
+*   Goggles (for ash)
+*   Tarps
+*   Multi-purpose tool
+*   Toothbrush
+*   Whistle
+*   Tools to secure windows/doors
+*   Local maps
+*   Sturdy shoes
+*   First aid kit
+*   Power bank
+*   Extra batteries
+*   Flashlight
+*   Rain gear
+*   Manual can opener
+*   Charger
+*   Contact list
+*   Prescription medications
+*   Baby supplies",Be aware of surroundings!,2025-12-14 01:15:03.302278
+18,21,2,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   First aid kit
+*   Non-perishable food
+*   Masks (for ash)
+*   Extra batteries
+*   Toilet paper
+*   Charger
+*   Waterproof bags
+*   Matches/lighter (waterproof)
+*   Multi-purpose tool
+*   Extra fuel
+*   Cash (small bills/coins)
+*   Sleeping bags
+*   Toothpaste
+*   Battery-powered/hand-crank radio
+*   Pet supplies
+*   Tools to secure windows/doors
+*   Baby supplies
+*   Water
+*   Flashlight
+*   Toothbrush
+*   Local maps
+*   Important documents (copies)
+*   Hand sanitizer
+*   Blankets
+*   Plastic sheeting
+*   Soap
+*   Mobile phone
+*   Prescription medications
+*   Power bank
+*   Duct tape
+*   Whistle
+*   Extra clothes
+*   Feminine hygiene products
+*   Contact list
+*   Rain gear
+*   Tarps
+*   Goggles (for ash)
+*   Sturdy shoes
+*   Manual can opener",Stay calm!,2025-12-14 01:19:15.772902
+19,22,3,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   First aid kit
+*   Waterproof bags
+*   Matches/lighter (waterproof)
+*   Charger
+*   Extra clothes
+*   Mobile phone
+*   Cash (small bills/coins)
+*   Toilet paper
+*   Tarps
+*   Toothbrush
+*   Baby supplies
+*   Hand sanitizer
+*   Blankets
+*   Water
+*   Local maps
+*   Feminine hygiene products
+*   Sleeping bags
+*   Sturdy shoes
+*   Extra batteries
+*   Goggles (for ash)
+*   Duct tape
+*   Contact list
+*   Pet supplies
+*   Power bank
+*   Prescription medications
+*   Flashlight
+*   Masks (for ash)
+*   Rain gear
+*   Toothpaste
+*   Tools to secure windows/doors
+*   Battery-powered/hand-crank radio
+*   Plastic sheeting
+*   Whistle
+*   Soap
+*   Important documents (copies)
+*   Multi-purpose tool
+*   Non-perishable food
+*   Extra fuel
+*   Manual can opener",Heed warnings!,2025-12-14 01:34:14.989692
+20,25,6,Barangay Hall of Munlawin Sur,Munlawin Sur Elementary School,"*   First aid kit
+*   Toilet paper
+*   Waterproof bags
+*   Extra clothes
+*   Pet supplies
+*   Masks (for ash)
+*   Toothbrush
+*   Cash (small bills/coins)
+*   Tools to secure windows/doors
+*   Blankets
+*   Manual can opener
+*   Baby supplies
+*   Contact list
+*   Sleeping bags
+*   Whistle
+*   Duct tape
+*   Important documents (copies)
+*   Water
+*   Goggles (for ash)
+*   Sturdy shoes
+*   Toothpaste
+*   Extra batteries
+*   Plastic sheeting
+*   Matches/lighter (waterproof)
+*   Prescription medications
+*   Local maps
+*   Hand sanitizer
+*   Soap
+*   Battery-powered/hand-crank radio
+*   Non-perishable food
+*   Feminine hygiene products
+*   Charger
+*   Tarps
+*   Rain gear
+*   Multi-purpose tool
+*   Mobile phone
+*   Power bank
+*   Extra fuel
+*   Flashlight",Avoid hazards!,2025-12-14 01:53:35.358658

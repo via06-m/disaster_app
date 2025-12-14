@@ -1,0 +1,76 @@
+-- database: ./app.db
+
+SELECT * FROM view1;
+SELECT * FROM user;
+SELECT * FROM article;
+SELECT * FROM community_report;
+SELECT * FROM safety_check;
+SELECT * FROM emergency_plan;
+SELECT * FROM resource;
+
+INSERT INTO user (id, email, full_name, phone, address, role, password_hash)
+VALUES
+(26, 'inahdimaunahan12@gmail.com', 'Inah M. Dimaunahan', '09482309098', '083  Munlawin Sur, Alitagtag, Batangas', 'user', '$2a$09$bnLnhjMk6v43ogp77q6D6lKj1BXXGAOzCPTB0iJub9bK0H2Ot02'),
+(27, 'pedropenduko@gmail.com', 'Pedro M. Penduko', '09196961311', '022  Munlawin Sur, Alitagtag, Batangas', 'user', '$2a$09$Tg6typwzpQ5angJAlcXlO1vVe9CXrT31GRgjpz1A6qc2XsbMIdu');
+
+UPDATE resource
+SET category = 'Other'
+WHERE id = 7;
+UPDATE resource
+SET category = 'Other'
+WHERE id = 8;
+UPDATE community_report
+SET location = '058 Munlawin Sur, Alitagtag, Batangas'
+WHERE id = 11;
+
+DELETE FROM user
+WHERE id = 2;
+DELETE FROM user
+WHERE id = 23;
+DELETE FROM user
+WHERE id = 24;
+
+SELECT 
+    cr.id,
+    u.full_name,
+    cr.disaster_type,
+    cr.location,
+    cr.status,
+    cr.created_at
+FROM community_report cr
+JOIN user u ON cr.user_id = u.id;
+
+SELECT
+       disaster_type,
+       COUNT(*) AS total_reports
+FROM community_report
+GROUP BY disaster_type;
+
+SELECT full_name, email
+FROM user
+WHERE id IN (
+    SELECT user_id
+    FROM community_report
+);
+
+SELECT disaster_type
+FROM community_report
+GROUP BY disaster_type
+HAVING COUNT(*) > (
+      SELECT AVG(report_count)
+      FROM (
+         SELECT COUNT(*) AS report_count
+         FROM community_report
+         GROUP BY disaster_type
+   )
+);
+
+SELECT
+      u.full_name,
+      s.status,
+      s.note,
+      s.created_at
+FROM safety_check s
+JOIN user u ON s.user_id = u.id
+WHERE s.status = 'Needs Help'
+ORDER BY s.created_at DESC;

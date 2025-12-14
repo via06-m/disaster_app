@@ -1,0 +1,22 @@
+id,user_id,status,note,created_at
+1,4,Safe,,2025-12-13 14:51:49.230725
+2,5,Needs Help,Force evacuation because there's a damage in my house due to strong winds.,2025-12-13 15:01:28.348701
+3,6,Safe,My family is safe at the house.,2025-12-13 15:02:43.724409
+4,7,Missing,,2025-12-13 15:03:38.293077
+5,7,Missing,Cannot contact by phone with my family.,2025-12-13 15:03:59.605193
+6,8,Safe,My family is safe.,2025-12-13 15:05:33.006571
+7,9,Needs Help,"My house is partially damaged, needs assistance.",2025-12-13 15:06:52.684075
+8,10,Safe,,2025-12-13 16:26:43.793105
+9,11,Safe,My house was fine and also my family.,2025-12-13 17:38:33.725487
+10,12,Safe,My family and I were safe.,2025-12-14 00:09:12.172747
+11,13,Needs Help,"My family and I we're stranded here. The bridge is closed, and my wife is going into labor soon! We need help.",2025-12-14 00:19:40.275579
+12,14,Safe,I'm gladly not hurt at all and safe.,2025-12-14 00:25:01.853015
+13,15,Safe,Everyone in my family is okay.,2025-12-14 00:29:23.146823
+14,16,Needs Help,I have minor injuries. Please send an ambulance.,2025-12-14 00:42:06.806913
+15,17,Needs Help,"My house was severely damage because of the wind of the typhoon. My family and I need a shelter. Send help, ASAP.",2025-12-14 00:46:43.836324
+16,18,Needs Help,Send help. The flood was rising faster than I expected.,2025-12-14 01:06:29.674444
+17,19,Needs Help,"The gas on my house was leaking, send help.",2025-12-14 01:11:55.722069
+18,20,Missing,My son is missing.,2025-12-14 01:17:28.471646
+19,21,Needs Help,One of the trees collapsed onto my house. My sibling is still inside. The only exit is blocked.,2025-12-14 01:26:25.906253
+20,22,Needs Help,My house was on fire. Send help.,2025-12-14 01:32:25.773329
+21,25,Needs Help,Need shelter.,2025-12-14 01:52:31.332131

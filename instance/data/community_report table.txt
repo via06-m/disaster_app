@@ -1,0 +1,21 @@
+id,user_id,disaster_type,location,description,status,verified_by_admin_id,created_at
+1,4,Typhoon,"01 Munlawin Sur, Alitagtag, Batangas",Heavy Rainfall,pending,,2025-12-13 17:11:05.820577
+2,5,Typhoon,"04 Munlawin Sur, Alitagtag, Batangas",Strong Wind,pending,,2025-12-13 17:13:58.981729
+3,6,Earthquake,"050 Munlawin Sur, Alitagtag, Batangas",5.1 magnitude earthquake,pending,,2025-12-13 17:17:24.713275
+4,7,Flood,"047 Munlawin Sur, Alitagtag, Batangas",The flood is higher than a person.,pending,,2025-12-13 17:22:43.207929
+5,10,Landslide,"035 Munlawin Sur, Alitagtag, Batangas",The road near my location was blocked because of the landslide.,pending,,2025-12-13 17:25:37.463651
+6,8,Flood,"050 Munlawin Sur, Alitagtag, Batangas",Knee-deep flood,pending,,2025-12-13 17:27:04.702703
+7,9,Earthquake,"032 Munlawin Sur, Alitagtag, Batangas",6.9 magnitude earthquake,pending,,2025-12-13 17:30:21.378452
+8,11,Fire,"03 Munlawin Sur, Alitagtag, Batangas",There's a small fire nearby my house.,pending,,2025-12-13 17:37:13.887862
+9,12,Landslide,"07 Munlawin Sur, Alitagtag, Batangas",No injuries were reported in the incident.,pending,,2025-12-14 00:08:43.850801
+10,13,Earthquake,"055 Munlawin Sur, Alitagtag, Batangas",Visible crack on the bridge. Please find an alternate route.,pending,,2025-12-14 00:16:16.947046
+11,14,Other,"058 Munlawin Sur, Alitagtag, Batangas",Clearance was on-going.,verified,3,2025-12-14 00:23:32.150455
+12,15,Flood,"087, Munlawin Sur, Alitagtag","Flood receded, the area was safe.",verified,3,2025-12-14 00:28:22.130568
+13,16,Other,"011 Munlawin Sur, Alitagtag, Batangas",The brake on my car malfunctioned. I need help.,verified,3,2025-12-14 00:41:07.205675
+14,17,Typhoon,"013 Munlawin Sur, Alitagtag, Batangas",Signal 3,verified,3,2025-12-14 00:45:10.871939
+15,18,Flood,"013 Munlawin Sur, Alitagtag, Batangas",The flood on my location is higher than a person.,verified,3,2025-12-14 01:05:44.971453
+16,19,Other,"097 Munlawin Sur, Alitagtag, Batangas",Gas leak.,verified,3,2025-12-14 01:11:28.805832
+17,20,Earthquake,"074 Munlawin Sur, Alitagtag, Batangas",6.3 magnitude,verified,3,2025-12-14 01:17:12.974974
+18,21,Other,"053 Munlawin Sur, Alitagtag, Batangas",Trees have collapsed.,resolved,3,2025-12-14 01:21:38.003950
+19,22,Fire,"087 Munlawin Sur, Alitagtag, Batangas",The fire was quickly spreading.,resolved,3,2025-12-14 01:31:56.617197
+20,25,Landslide,"038 Munlawin Sur, Alitagtag, Batangas",My house was buried by the landslide.,resolved,3,2025-12-14 01:52:20.670166

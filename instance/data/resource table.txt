@@ -1,0 +1,13 @@
+id,name,category,address,contact,latitude,longitude,updated_at
+1,Alitagtag Rural Health Unit,Hospital,"N433, National Road, Alitagtag, Batangas",0929-378-0472,13.8703,121.0233,2025-12-14 03:17:39.072204
+2,Bauan Doctors General Hospital,Hospital,"Q2W2+5H8, S. Ilagan, Poblacion, Bauan, 4201 Batangas",+43-7272-237,13.7954,121.0015,2025-12-14 03:22:27.504053
+3,"Our Lady of Caysasay, Lemery Batangas",Hospital,"Illustre Ave, Lemery, 4209 Batangas",(043)-406-2911,13.8813,120.91556,2025-12-14 03:25:18.815477
+4,Taal Polymedic Hospital,Hospital,"VWPR+9QC, Diversion Rd, Taal, Batangas",(043)-740-6283,13.89,120.94,2025-12-14 03:27:27.949131
+5,Batangas Medical Center,Hospital,"Bihi Road, Batangas City, 4200 Batangas",(043)-740-8307,13.7669,121.0663,2025-12-14 03:32:06.715186
+6,Munlawin Elementary School,Evacuation Center,"V24F+994, Alitagtag, Batangas",,13.8559,121.0234,2025-12-14 03:34:21.964460
+7,Barangay Captain Rogel Dimaunahan,Other,"V23C+CPC, Alitagtag - San Pascual Rd, San Pascual, Batangas",0930-798-8862,13.855,121.0293,2025-12-14 03:38:51.623690
+8,Hon. Manilyn Autor,Other,"V23C+CPC, Alitagtag - San Pascual Rd, San Pascual, Batangas",0920-824-2965,13.855,121.0293,2025-12-14 03:40:30.886858
+9,Hon. Melchor Magnaye,Other,"V23C+CPC, Alitagtag - San Pascual Rd, San Pascual, Batangas",0933-522-7744,13.855,121.0293,2025-12-14 03:43:02.737687
+10,MDDRMO Alitagtag,Hotline,"Municipal Hall, Dominador East, Alitagtag, Batangas",0923-700-5947,13.87952,121.035672,2025-12-14 03:53:31.693637
+11,Alitagtag Municipal Police Station,Police,"V284+F6Q, National Road, Alitagtag, 4205 Batangas",(043)-772-3058,13.86193,121.032885,2025-12-14 04:04:03.127064
+12,BFP RIVA ALITAGTAG FPS,Fire Station,,0981-685-4771,,,2025-12-14 04:07:20.570884
