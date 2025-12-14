@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+  <!-- Explanation: Landing page with latest articles/resources. -->
+  <h1>Welcome to the Disaster Preparedness App</h1>
+
+  <section>
+    <h2>Latest Articles</h2>
+    <ul>
+      {% for a in articles %}
+        <li><strong>{{ a.title }}</strong> — {{ a.category }} ({{ a.published_at.strftime("%Y-%m-%d") }})</li>
+      {% else %}
+        <li>No articles yet.</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Resources</h2>
+    <ul>
+      {% for r in resources %}
+        <li><strong>{{ r.name }}</strong> — {{ r.category }} {% if r.contact %}(Contact: {{ r.contact }}){% endif %}</li>
+      {% else %}
+        <li>No resources yet.</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

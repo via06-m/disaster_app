@@ -1,0 +1,7 @@
+<!-- templates/logout.html -->
+<!-- Explanation: Route handles logout; template optional. -->
+{% extends "base.html" %}
+{% block content %}
+<h1>You have been logged out.</h1>
+<p><a href="{{ url_for('index') }}">Return to Index</a></p>
+{% endblock %}

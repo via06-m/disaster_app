@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Resource directory{% endblock %}
+{% block content %}
+  <!-- Explanation: Public resource directory; shows admin form when admin=True. -->
+  <h1>Resource Directory</h1>
+  <ul>
+    {% for r in resources %}
+      <li>
+        <strong>{{ r.name }}</strong> — {{ r.category }}
+        {% if r.address %}<br>{{ r.address }}{% endif %}
+        {% if r.contact %}<br>Contact: {{ r.contact }}{% endif %}
+        {% if r.latitude and r.longitude %}
+          <br>Coordinates: {{ r.latitude }}, {{ r.longitude }}
+        {% endif %}
+      </li>
+    {% else %}
+      <li>No resources yet.</li>
+    {% endfor %}
+  </ul>
+
+  {% if admin %}
+    <h2>Add Resource</h2>
+    <form method="post">
+      {{ form.csrf_token }}
+      <div>{{ form.name.label }} {{ form.name() }}</div>
+      <div>{{ form.category.label }} {{ form.category() }}</div>
+      <div>{{ form.address.label }} {{ form.address() }}</div>
+      <div>{{ form.contact.label }} {{ form.contact() }}</div>
+      <div>{{ form.latitude.label }} {{ form.latitude() }}</div>
+      <div>{{ form.longitude.label }} {{ form.longitude() }}</div>
+      <div>{{ form.submit() }}</div>
+    </form>
+  {% endif %}
+{% endblock %}

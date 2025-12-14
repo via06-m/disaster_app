@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Educational hub{% endblock %}
+{% block content %}
+  <!-- Explanation: List of articles/guides. -->
+  <h1>Educational Hub</h1>
+  <ul>
+    {% for a in articles %}
+      <li>
+        <strong>{{ a.title }}</strong> — {{ a.category }}<br>
+        <div>{{ a.content }}</div>
+      </li>
+    {% else %}
+      <li>No content yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

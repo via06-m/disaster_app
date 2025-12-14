@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Community report{% endblock %}
+{% block content %}
+  <!-- Explanation: Create and list user's reports. -->
+  <h1>Community Reporting</h1>
+  <form method="post">
+    {{ form.csrf_token }}
+    <div>{{ form.disaster_type.label }} {{ form.disaster_type() }}</div>
+    <div>{{ form.location.label }} {{ form.location() }}</div>
+    <div>{{ form.description.label }} {{ form.description() }}</div>
+    <div>{{ form.submit() }}</div>
+  </form>
+
+  <h2>Your Reports</h2>
+  <ul>
+    {% for r in my_reports %}
+      <li>{{ r.disaster_type }} — {{ r.location }} — {{ r.status }} ({{ r.created_at.strftime("%Y-%m-%d") }})</li>
+    {% else %}
+      <li>No reports yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
