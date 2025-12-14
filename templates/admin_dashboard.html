@@ -10,6 +10,7 @@
       {% for r in recent_reports %}
         <li>
           {{ r.disaster_type }} — {{ r.location }} — {{ r.status }}
+<<<<<<< HEAD
 
           <form method="post"
                 action="{{ url_for('verify_report', report_id=r.id) }}"
@@ -22,6 +23,12 @@
                 action="{{ url_for('resolve_report', report_id=r.id) }}"
                 style="display:inline;">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+=======
+          <form method="post" action="{{ url_for('verify_report', report_id=r.id) }}" style="display:inline;">
+            <button type="submit">Verify</button>
+          </form>
+          <form method="post" action="{{ url_for('resolve_report', report_id=r.id) }}" style="display:inline;">
+>>>>>>> 178100caa73401e69f8e76b5e7aa5254a58eed7e
             <button type="submit">Resolve</button>
           </form>
         </li>
@@ -46,11 +53,15 @@
     <h2>Safety Updates</h2>
     <ul>
       {% for s in recent_safety %}
+<<<<<<< HEAD
         <li>
           {{ s.user.full_name }} —
           {{ s.status }} —
           {{ s.created_at.strftime("%Y-%m-%d %H:%M") }}
         </li>
+=======
+        <li>{{ s.user.full_name }} — {{ s.status }} — {{ s.created_at.strftime("%Y-%m-%d %H:%M") }}</li>
+>>>>>>> 178100caa73401e69f8e76b5e7aa5254a58eed7e
       {% else %}
         <li>No safety updates.</li>
       {% endfor %}
@@ -61,19 +72,29 @@
     <h2>Resources</h2>
     <ul>
       {% for r in resources %}
+<<<<<<< HEAD
         <li>
           {{ r.name }} — {{ r.category }}
           {% if r.contact %}(Contact: {{ r.contact }}){% endif %}
         </li>
+=======
+        <li>{{ r.name }} — {{ r.category }} {% if r.contact %}(Contact: {{ r.contact }}){% endif %}</li>
+>>>>>>> 178100caa73401e69f8e76b5e7aa5254a58eed7e
       {% else %}
         <li>No resources.</li>
       {% endfor %}
     </ul>
 
+<<<<<<< HEAD
     <h3>Add / Update Resources</h3>
     <form method="post" action="{{ url_for('admin_resources') }}">
       {{ form.csrf_token }}
 
+=======
+    <h3>Add/Update Resources</h3>
+    <form method="post" action="{{ url_for('admin_resources') }}">
+      {{ form.csrf_token }}
+>>>>>>> 178100caa73401e69f8e76b5e7aa5254a58eed7e
       <div>{{ form.name.label }} {{ form.name() }}</div>
       <div>{{ form.category.label }} {{ form.category() }}</div>
       <div>{{ form.address.label }} {{ form.address() }}</div>
@@ -83,6 +104,7 @@
       <div>{{ form.submit() }}</div>
     </form>
   </section>
+<<<<<<< HEAD
 
   <section>
   <h2>Educational Articles</h2>
@@ -113,4 +135,6 @@
     <button type="submit">Publish Article</button>
   </form>
 </section>
+=======
+>>>>>>> 178100caa73401e69f8e76b5e7aa5254a58eed7e
 {% endblock %}

@@ -1,0 +1,61 @@
+/* Dinosaur Theme with Background Image */
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: url("../images/dinosaur-bg.jpg") no-repeat center center fixed; 
+  background-size: cover;   /* Ensures the image fills the screen */
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overlay effect for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.7); /* semi-transparent overlay */
+  z-index: -1;
+}
+
+/* Navbar: jungle green */
+.navbar {
+  background: #355e3b;
+  padding: 12px;
+}
+
+.navbar a {
+  color: #f4e2d8;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* Cards: fossil slab look */
+.card {
+  background: #fff8dc;
+  border: 3px solid #5a3e1b;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #5a3e1b;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* Buttons: dinosaur egg style */
+button, input[type="submit"] {
+  background: #a0522d;
+  color: #fff8dc;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #8b4513;
+}
