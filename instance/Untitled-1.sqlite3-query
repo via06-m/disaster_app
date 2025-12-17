@@ -1,0 +1,7 @@
+-- database: ./app.db
+
+SELECT * FROM article;
+
+DELETE FROM article WHERE id = 4;
+
+DELETE FROM article WHERE id = 5;
