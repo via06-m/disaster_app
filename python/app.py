@@ -1,4 +1,4 @@
-# Explanation: Main Flask application with routes and features.
+# Main Flask application with routes and features.
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from flask_migrate import Migrate
 from flask_wtf import CSRFProtect
@@ -10,7 +10,7 @@ from python.utils import login_required, admin_required
 app = Flask(__name__)
 app.config.from_object(Config)
 
-# Explanation: Initialize extensions.
+# Initialize extensions.
 db.init_app(app)
 migrate = Migrate(app, db)  # optional migration support
 csrf = CSRFProtect(app)
@@ -20,7 +20,7 @@ csrf = CSRFProtect(app)
 # --------------------------------
 @app.route("/")
 def index():
-    # Explanation: Landing page showing highlights and public resources/articles.
+    # Landing page showing highlights and public resources/articles.
     latest_articles = Article.query.order_by(Article.published_at.desc()).limit(3).all()
     latest_resources = Resource.query.order_by(Resource.updated_at.desc()).limit(5).all()
     return render_template("index.html", articles=latest_articles, resources=latest_resources)
@@ -28,7 +28,7 @@ def index():
 @app.route("/home")
 @login_required
 def home():
-    # Explanation: User dashboard showing recent reports, safety status, and plan snippet.
+    #  User dashboard showing recent reports, safety status, and plan snippet.
     user = User.query.get(session["user_id"])
     reports = CommunityReport.query.filter_by(user_id=user.id).order_by(CommunityReport.created_at.desc()).limit(5).all()
     safety = SafetyCheck.query.filter_by(user_id=user.id).order_by(SafetyCheck.created_at.desc()).first()
@@ -55,7 +55,7 @@ def login():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     form = RegisterForm()
-    # Explanation: Create a new user securely.
+    # Create a new user securely.
     if form.validate_on_submit():
         if User.query.filter_by(email=form.email.data.lower().strip()).first():
             flash("Email already registered.")
@@ -76,7 +76,7 @@ def register():
 
 @app.route("/forgot_password", methods=["GET", "POST"])
 def forgot_password():
-    # Explanation: Placeholder for password reset (email token flow recommended in prod).
+    # Placeholder for password reset (email token flow recommended in prod).
     if request.method == "POST":
         flash("If this email exists, a reset link will be sent.")
         return redirect(url_for("login"))
@@ -84,7 +84,7 @@ def forgot_password():
 
 @app.route("/logout")
 def logout():
-    # Explanation: Clear user session.
+    # Clear user session.
     session.clear()
     flash("Logged out.")
     return redirect(url_for("index"))
@@ -95,7 +95,7 @@ def logout():
 @app.route("/adminlogin", methods=["GET", "POST"])
 def adminlogin():
     form = LoginForm()
-    # Explanation: Admin login using existing User accounts with 'admin' role.
+    #  Admin login using existing User accounts with 'admin' role.
     if form.validate_on_submit():
         admin = User.query.filter_by(email=form.email.data.lower().strip(), role="admin").first()
         if admin and admin.check_password(form.password.data):
@@ -119,7 +119,7 @@ def admin_dashboard():
                            recent_users=recent_users,
                            recent_safety=recent_safety,
                            resources=resources,
-                           form=form)   # <-- pass it
+                           form=form)  
 
 # --------------------------------
 # Educational Hub
@@ -137,7 +137,7 @@ def educationalhub():
 @login_required
 def communityreport():
     form = ReportForm()
-    # Explanation: Allow users to submit disaster reports; admin can verify later.
+    #  Allow users to submit disaster reports; admin can verify later.
     if form.validate_on_submit():
         report = CommunityReport(
             user_id=session["user_id"],
@@ -150,11 +150,11 @@ def communityreport():
         db.session.commit()
         flash("Report submitted.")
         return redirect(url_for("communityreport"))
-    # Explanation: Show user's reports.
+    # Show user's reports.
     my_reports = CommunityReport.query.filter_by(user_id=session["user_id"]).order_by(CommunityReport.created_at.desc()).all()
     return render_template("communityreport.html", form=form, my_reports=my_reports)
 
-# Explanation: Admin actions on reports (verify/resolve).
+# Admin actions on reports (verify/resolve).
 @app.route("/admin/reports/<int:report_id>/verify", methods=["POST"])
 @admin_required
 def verify_report(report_id):
@@ -179,7 +179,7 @@ def resolve_report(report_id):
 # --------------------------------
 @app.route("/resourcedirectory", methods=["GET"])
 def resourcedirectory():
-    # Explanation: Public view of resources.
+    # Public view of resources.
     resources = Resource.query.order_by(Resource.category.asc()).all()
     return render_template("resourcedirectory.html", resources=resources)
 
@@ -187,7 +187,7 @@ def resourcedirectory():
 @admin_required
 def admin_resources():
     form = ResourceForm()
-    # Explanation: Admin can add/update resource entries.
+    # Admin can add/update resource entries.
     if form.validate_on_submit():
         resource = Resource(
             name=form.name.data.strip(),
@@ -211,7 +211,7 @@ def admin_resources():
 @login_required
 def emergencyplangenerator():
     form = PlanForm()
-    # Explanation: Capture user plan inputs and persist.
+    #  Capture user plan inputs and persist.
     if form.validate_on_submit():
         plan = EmergencyPlan(
             user_id=session["user_id"],
@@ -234,7 +234,7 @@ def emergencyplangenerator():
 @app.route("/personalinformation", methods=["GET", "POST"])
 @login_required
 def personalinformation():
-    # Explanation: Simple profile view/update for user details.
+    # Simple profile view/update for user details.
     user = User.query.get_or_404(session["user_id"])
     if request.method == "POST":
         user.full_name = request.form.get("full_name") or user.full_name
@@ -267,7 +267,7 @@ def safetycheck():
 # --------------------------------
 @app.cli.command("init-db")
 def init_db():
-    # Explanation: CLI helper to create tables and seed minimal data.
+    #  CLI helper to create tables and seed minimal data.
     with app.app_context():
         db.create_all()
         if not User.query.filter_by(email="jiananghelito29@gmail.com").first():
@@ -283,5 +283,5 @@ def init_db():
         print("Database initialized with admin and sample articles.")
 
 if __name__ == "__main__":
-    # Explanation: Run development server.
+    #  Run development server.
     app.run(debug=True)

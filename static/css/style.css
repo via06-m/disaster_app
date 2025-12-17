@@ -1,8 +1,27 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   position: relative;
   height: 300px;
-  background: linear-gradient(to bottom, #006400, #228B22); /* green gradient */
+  background: linear-gradient(to bottom, #006400, #228b22);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,85 +48,43 @@
   margin-top: 5px;
 }
 
-body, .navbar {
-  margin: 0;
-  padding: 0;
-}
-
-.hero {
-  margin-top: 0;   /* no gap */
-}
-
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
-  background: #355e3b;
+  background-color: #006400;
   padding: 12px;
 }
 
 .navbar a {
-  color: #f4e2d8;
+  color: #f0fff0;
   text-decoration: none;
   margin-right: 15px;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #ffd700;
+  color: #adff2f;
 }
 
+/* =========================
+   CARDS
+========================= */
 .card {
-  background: #fff8dc;
-  border: 3px solid #5a3e1b;
-  border-radius: 12px;
-  box-shadow: 4px 4px 0 #5a3e1b;
-  padding: 16px;
-  margin-bottom: 20px;
-}
-
-/* Buttons: dinosaur egg style */
-button, input[type="submit"] {
-  background: #a0522d;
-  color: #fff8dc;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255, 255, 255, 0.6); /* soft white overlay */
-  z-index: -1;
-}
-
-.navbar {
-  background-color: #006400; /* Dark Green */
-  padding: 12px;
-}
-
-.navbar a {
-  color: #f0fff0; /* Honeydew */
-  text-decoration: none;
-  margin-right: 15px;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: #adff2f; /* GreenYellow */
-}
-
-.card {
-  background-color: #90ee90; /* Light Green */
+  background-color: #90ee90;
   border: 2px solid #006400;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 20px;
-  color: #003300; /* dark text */
+  color: #003300;
 }
 
-button, input[type="submit"] {
-  background-color: #32cd32; /* LimeGreen */
+/* =========================
+   BUTTONS
+========================= */
+button,
+input[type="submit"] {
+  background-color: #32cd32;
   color: white;
   border: none;
   padding: 10px 18px;
@@ -116,75 +93,69 @@ button, input[type="submit"] {
   font-weight: bold;
 }
 
-button:hover, input[type="submit"]:hover {
-  background-color: #228b22; /* Forest Green */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #228b22;
 }
 
-/* Educational Hub Wrapper */
+/* =========================
+   EDUCATIONAL HUB
+========================= */
 .educational-hub {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 6px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
 }
 
-/* Quick Actions Bar (Educational Hub only) */
+/* QUICK ACTIONS */
 .educational-hub .quick-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 25px;
-    padding: 15px;
-    background-color: #eef7f1;
-    border-left: 5px solid #2f5d3a;
-    border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #e6f5ea;
+  border-left: 5px solid #006400;
+  border-radius: 6px;
 }
 
-/* Quick Action Buttons */
 .educational-hub .quick-actions a,
 .educational-hub .quick-actions button {
-    background-color: #2f5d3a;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 16px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  background-color: #006400;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-/* Hover Effect */
 .educational-hub .quick-actions a:hover,
 .educational-hub .quick-actions button:hover {
-    background-color: #244a2e;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+  background-color: #228b22;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Active Effect */
-.educational-hub .quick-actions a:active,
-.educational-hub .quick-actions button:active {
-    transform: translateY(0);
-    box-shadow: none;
-}
-
-/* Optional Icons */
+/* Icons (optional) */
 .educational-hub .quick-actions i {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
-/* Mobile Friendly */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-    .educational-hub .quick-actions {
-        flex-direction: column;
-    }
+  .educational-hub .quick-actions {
+    flex-direction: column;
+  }
 
-    .educational-hub .quick-actions a,
-    .educational-hub .quick-actions button {
-        width: 100%;
-        text-align: center;
-    }
+  .educational-hub .quick-actions a,
+  .educational-hub .quick-actions button {
+    width: 100%;
+    text-align: center;
+  }
 }
-
-
