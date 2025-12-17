@@ -118,5 +118,13 @@ button, input[type="submit"] {
 
 button:hover, input[type="submit"]:hover {
   background-color: #228b22; /* Forest Green */
+
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.6); /* soft white overlay */
+  z-index: -1;
+}
