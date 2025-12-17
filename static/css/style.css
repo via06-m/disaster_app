@@ -1,24 +1,43 @@
-/* Dinosaur Theme with Background Image */
 
-body {
-  font-family: 'Trebuchet MS', sans-serif;
-  background: url("../images/dinosaur-bg.jpg") no-repeat center center fixed; 
-  background-size: cover;   /* Ensures the image fills the screen */
-  color: #2c2c2c;
+.hero {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(to bottom, #006400, #228B22); /* green gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  color: white;
+}
+
+.hero-logo {
+  max-height: 120px;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+body, .navbar {
   margin: 0;
   padding: 0;
 }
 
-/* Overlay effect for readability */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255, 255, 255, 0.7); /* semi-transparent overlay */
-  z-index: -1;
+.hero {
+  margin-top: 0;   /* no gap */
 }
 
-/* Navbar: jungle green */
 .navbar {
   background: #355e3b;
   padding: 12px;
@@ -35,7 +54,6 @@ body::before {
   color: #ffd700;
 }
 
-/* Cards: fossil slab look */
 .card {
   background: #fff8dc;
   border: 3px solid #5a3e1b;
@@ -55,7 +73,50 @@ button, input[type="submit"] {
   cursor: pointer;
   font-weight: bold;
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.6); /* soft white overlay */
+  z-index: -1;
+}
+
+.navbar {
+  background-color: #006400; /* Dark Green */
+  padding: 12px;
+}
+
+.navbar a {
+  color: #f0fff0; /* Honeydew */
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #adff2f; /* GreenYellow */
+}
+
+.card {
+  background-color: #90ee90; /* Light Green */
+  border: 2px solid #006400;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  color: #003300; /* dark text */
+}
+
+button, input[type="submit"] {
+  background-color: #32cd32; /* LimeGreen */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 button:hover, input[type="submit"]:hover {
-  background: #8b4513;
+  background-color: #228b22; /* Forest Green */
 }
+
